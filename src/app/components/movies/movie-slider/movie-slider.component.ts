@@ -14,6 +14,9 @@ export class MovieSliderComponent implements OnInit {
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
+    this.movieSlider();
+  }
+  movieSlider(): void {
     this.movieService.getNowPlayingMovie().subscribe((res) => {
       this.movies = res.slice(0, 5);
     });
