@@ -2,7 +2,7 @@
     <b>
         <a href="https://movieapp-ce.netlify.app/">Movie App Angular</a><br>
     </b>
-    :collision: Pagina de Peliculas en Angular :collision:<br>
+    :collision: Pagina Web de Peliculas en Angular :collision:<br>
 </h1>
 
 App de Peliculas con llamada a Api de TheMovieDB hecha en angular.
@@ -11,7 +11,7 @@ App de Peliculas con llamada a Api de TheMovieDB hecha en angular.
 
 ### Live Demo
 
-- [Peliculas](https://movieapp-ce.netlify.app/)
+- [Movies App](https://movieapp-ce.netlify.app/)
 
 ---
 
