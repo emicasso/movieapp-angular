@@ -1,0 +1,27 @@
+.movie-placeholder {
+    color: #c3cfff;
+    background-color: #0f1014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26rem;
+  }
+  
+  @media (max-width: 1390px) {
+    .movie-placeholder {
+      height: 22rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .movie-placeholder {
+      height: 18rem;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .movie-placeholder {
+      height: 26rem;
+    }
+  }
+  

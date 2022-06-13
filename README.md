@@ -1,27 +1,72 @@
-# MovieappAngular
+<h1 align="center" style="border-bottom: none">
+    <b>
+        <a href="https://movieapp-ce.netlify.app/">Movie App Angular</a><br>
+    </b>
+    :collision: Pagina de Peliculas en Angular :collision:<br>
+</h1>
+
+App de Peliculas con llamada a Api de TheMovieDB hecha en angular.
+
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/emicasso/movieapp-angular)
+
+### Live Demo
+
+- [Peliculas](https://movieapp-ce.netlify.app/)
+
+---
+
+## Starting 🚀
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
-## Development server
+1. Clone or download the repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+git clone https://github.com/emicasso/movieapp-angular
+```
 
-## Code scaffolding
+2. Change the working directory
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+cd movieapp-angular
+```
+
+3. Execute:
+
+```bash
+npm install
+```
+
+4. Run:
+
+```bash
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+```
 
 ## Build
 
+```bash
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
 
 ## Running unit tests
 
+```bash
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Author
 
-## Further help
+👤 **Emiliano Cassoni**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Web](https://cedev.netlify.app/#/)
+- [LinkedIn](https://www.linkedin.com/in/emiliano-cassoni/)
+- [Github](https://github.com/emicasso)
+
+## Contribute 🖇️
+
+It is my first big project on Angular, So it can have errors, and there is a lot of things that can be added. I'm still learning, if would love some feedback!
+
+Please, feel free to submitting pull requests to me.

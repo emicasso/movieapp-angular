@@ -1,0 +1,42 @@
+<div class="container" *ngIf="cast">
+    
+    <div class="row">
+      <div class="container text-center pt-5 text-uppercase">
+          <h1>Elenco 👥🎬</h1>
+        </div>
+      <div
+        class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center py-4"
+        *ngFor="let item of cast"
+      >
+        <div
+          class="card"
+          style="width: 20rem"
+          *ngIf="item.profile_path; else templateName"
+        >
+          <img
+            #content
+            [src]="imageBaseUrl + '/h632' + item.profile_path"
+            class="card-img-top img-fluid"
+            alt="elenco"
+          />
+          <ng-template #templateName> If isValid is false </ng-template>
+          <div class="card-body">
+            <h5 class="card-title">{{ item.character }}</h5>
+            <p class="card-text">{{ item.original_name }}</p>
+          </div>
+        </div>
+        <ng-template #templateName>
+          <div class="card d-flex" style="width: 20rem">
+            <div class="_flip-card-front">
+              <div class="movie-placeholder card-img-top">no img</div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ item.character }}</h5>
+              <p class="card-text">Actor: {{ item.original_name }}</p>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  

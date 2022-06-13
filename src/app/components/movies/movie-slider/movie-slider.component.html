@@ -1,0 +1,15 @@
+<ngb-carousel *ngIf="movies">
+    <ng-template *ngFor="let movie of movies" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          [src]="imageBaseUrl + '/original' + movie.backdrop_path"
+          class="img-fluid"
+        />
+      </div>
+      <div class="carousel-caption alert alert-dismissible alert-light">
+        <h3 class="text-dark text-uppercase">{{ movie.title }}</h3>
+        <small class="text-dark descrip">{{ movie.overview }}</small>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  

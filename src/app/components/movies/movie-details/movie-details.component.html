@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row justify-content-center" *ngIf="movie">
+      <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 text-center">
+        <h3 class="card-header">
+          <img
+            [src]="imageBaseUrl + '/w500' + movie.poster_path"
+            class="img-fluid rounded-start"
+          />
+        </h3>
+      </div>
+      <div class="col-md-5 col-sm-12 col-lg-5">
+        <div class="card-body">
+          <h3 class="card-title">{{ movie.title }}</h3>
+          <ul class="list-group list-group-flush my-3 bg-secondary">
+            <li class="list-group-item" style="font-size: x-large; color: orange">
+              <ngb-rating
+                [max]="10"
+                [(rate)]="movie.vote_average"
+                [readonly]="false"
+              ></ngb-rating>
+              {{ movie.vote_average }}
+            </li>
+            <li class="list-group-item card-text">{{ movie.release_date }}</li>
+            <li class="list-group-item card-text">{{ movie.overview }}</li>
+          </ul>
+          <button (click)="backHome()" class="btn btn-primary">
+            Volver al inicio
+          </button>
+        </div>
+      </div>
+    </div>
+    <app-movie-cast></app-movie-cast>
+  </div>
+  
